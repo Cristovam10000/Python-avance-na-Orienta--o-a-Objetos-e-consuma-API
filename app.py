@@ -8,11 +8,12 @@ from modelos.Pratica.Veiculo import carro
 from modelos.Pratica.Veiculo import moto
 
 restaurante_praca = Restaurante('praça', 'Gourmet')
-restaurante_praca.adicionar_no_cardapio(bebida('Coca-Cola', 5.00, 'grande'))
-restaurante_praca.adicionar_no_cardapio(Prato('Lasanha', 25.00, 'Lasanha de carne com molho branco e queijo gratinado'))
 bebida1 = bebida('Coca-Cola', 5.00, 'grande')
+bebida1.aplicar_desconto()
 prato1 = Prato('Lasanha', 25.00, 'Lasanha de carne com molho branco e queijo gratinado')
-
+prato1.aplicar_desconto()
+restaurante_praca.adicionar_no_cardapio(bebida1)
+restaurante_praca.adicionar_no_cardapio(prato1)
 
 # teste
 veiculo1 = veiculo('Toyota', 'Corolla')
