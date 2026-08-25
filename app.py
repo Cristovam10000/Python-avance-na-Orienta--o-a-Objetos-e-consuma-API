@@ -8,8 +8,8 @@ from modelos.Pratica.Veiculo import carro
 from modelos.Pratica.Veiculo import moto
 
 restaurante_praca = Restaurante('praça', 'Gourmet')
-restaurante_praca.adicionar_bebida_no_cardapio(bebida('Coca-Cola', 5.00, 'grande'))
-restaurante_praca.adicionar_prato_no_cardapio(Prato('Lasanha', 25.00, 'Lasanha de carne com molho branco e queijo gratinado'))
+restaurante_praca.adicionar_no_cardapio(bebida('Coca-Cola', 5.00, 'grande'))
+restaurante_praca.adicionar_no_cardapio(Prato('Lasanha', 25.00, 'Lasanha de carne com molho branco e queijo gratinado'))
 bebida1 = bebida('Coca-Cola', 5.00, 'grande')
 prato1 = Prato('Lasanha', 25.00, 'Lasanha de carne com molho branco e queijo gratinado')
 
@@ -24,9 +24,7 @@ moto1 = moto('Yamaha', 'MT-07', 'Esportiva')
 
 
 def main():
-    print(restaurante_praca)
-    print(bebida1)
-    print(prato1)
+    restaurante_praca.exibir_cardapio
 
     # teste
     print(veiculo1)
