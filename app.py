@@ -1,19 +1,24 @@
 from modelos.restaurante import Restaurante
 from modelos.cardapio.bebida import bebida
 from modelos.cardapio.prato import Prato
+from modelos.cardapio.sobremesa import Sobremesa
 
 # teste
 from modelos.Pratica.Veiculo import veiculo
 from modelos.Pratica.Veiculo import carro
 from modelos.Pratica.Veiculo import moto
 
-restaurante_praca = Restaurante('praça', 'Gourmet')
+sobremesa1 = Sobremesa('Pudim', 10.00, 'Pudim de leite condensado', 'Doce', 'Médio')
+sobremesa1.aplicar_desconto()
 bebida1 = bebida('Coca-Cola', 5.00, 'grande')
 bebida1.aplicar_desconto()
 prato1 = Prato('Lasanha', 25.00, 'Lasanha de carne com molho branco e queijo gratinado')
 prato1.aplicar_desconto()
+
+restaurante_praca = Restaurante('praça', 'Gourmet')
 restaurante_praca.adicionar_no_cardapio(bebida1)
 restaurante_praca.adicionar_no_cardapio(prato1)
+restaurante_praca.adicionar_no_cardapio(sobremesa1)
 
 # teste
 veiculo1 = veiculo('Toyota', 'Corolla')
