@@ -21,10 +21,11 @@ restaurante_praca.adicionar_no_cardapio(prato1)
 restaurante_praca.adicionar_no_cardapio(sobremesa1)
 
 # teste
-veiculo1 = veiculo('Toyota', 'Corolla')
-carro1 = carro('Honda', 'Civic', 4)
-moto1 = moto('Yamaha', 'MT-07', 'Esportiva')
 
+carro1 = carro('Honda', 'Civic', 4, 'Preto')
+carro1.ligar()
+moto1 = moto('Yamaha', 'MT-07', 'Esportiva')
+moto1.ligar()
 
 
 
@@ -33,7 +34,7 @@ def main():
     restaurante_praca.exibir_cardapio
 
     # teste
-    print(veiculo1)
+    
     print(carro1)
     print(moto1)
 
