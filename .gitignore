@@ -1,4 +1,5 @@
 /docs
+/*.json
 # Arquivos compilados do Python
 __pycache__/
 *.py[cod]
